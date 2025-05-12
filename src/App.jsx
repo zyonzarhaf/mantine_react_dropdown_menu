@@ -1,23 +1,16 @@
 import React from 'react';
-import { MantineProvider } from '@mantine/core';
-import '@mantine/core/styles.css';
-import DropdownMenu from './components/DropdownMenu';
-import { lowerSection, mainSection } from './data';
 
+import { MantineProvider } from '@mantine/core';
+
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import '@mantine/core/styles.css';
 
 function App() {
   return (
     <MantineProvider defaultColorScheme='dark'>
-      <main>
-        <header>
-          <nav>
-            <DropdownMenu
-              mainSection={mainSection} 
-              lowerSection={lowerSection}
-            />
-          </nav>
-        </header>
-      </main>
+      <Navbar />
+      <Hero /> 
     </MantineProvider>
   );
 }
