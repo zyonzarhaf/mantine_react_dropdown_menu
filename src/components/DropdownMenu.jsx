@@ -32,6 +32,7 @@ const DropdownMenu = ({ mainSection, lowerSection }) => {
             styles={{
               dropdown: {
                 width: '90%',
+                maxWidth: '1150px',
                 position: 'absolute',
                 margin: 'auto',
                 left: 0,
